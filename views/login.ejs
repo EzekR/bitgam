@@ -1,0 +1,17 @@
+<div id="form">
+</div>
+<script>
+  $(function () {
+    var login_info = '<%= login%>';
+    if (login_info === 'something wrong') {
+      alert('something wrong, maybe password maybe username whatever motherfucker');
+    } else {
+      var html = '<form action="/login" method="get">'+
+        '<input name="username" id="name" placeholder="用户名">'+
+        '<input name="passwd" id="pass" placeholder="密码" type="password">'+
+        '<input type="submit" value="confirm">'+
+          '</form>';
+      $('#form').html(html);
+    }
+  })
+</script>

@@ -36,7 +36,15 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'get /get_free_bitcoin': 'HomeController.getFreeBitcoin'
+  'get /get_free_bitcoin': 'HomeController.getFreeBitcoin',
+
+  'get /login': 'HomeController.login',
+
+  'get /admin': 'HomeController.admin',
+
+  'post /admin/content': 'HomeController.content',
+
+  'get /get_free_bitcoin/content': 'HomeController.getContent'
 
   /***************************************************************************
   *                                                                          *
