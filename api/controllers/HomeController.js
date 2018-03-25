@@ -1,0 +1,13 @@
+/**
+ * HomeController
+ *
+ * @description :: Server-side logic for managing homes
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ */
+
+module.exports = {
+	getFreeBitcoin: function (req, res) {
+    res.view('get_free_bitcoin');
+  }
+};
+
